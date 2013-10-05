@@ -3,6 +3,7 @@
 
 				<section class="content">
 				<img src="images/expand-icon.png" class="expand-all" data-post-flipped="true"/><p class="expand-all" data-post-flipped="true">Expand all articles</p>
+				
 					<div class="post-folded" data-post-id="1">
 						<img data-post-id="1" data-post-flipped="true" class="fold-icon" src="images/fold-icon.png" title="Fold Article" alt="fold article icon">
 						<h2>Three Cheese For the Team!</h2><img src="images/edit-icon.png" width="18" height="18"/>

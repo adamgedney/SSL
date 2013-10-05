@@ -6,7 +6,7 @@
 <script src="js/main.js"></script>
 
 <footer>
-			<p><span class="red">&copy;2013 Bloggity.com </span> |  <a href="#">Terms of Use</a>  |  <a href="#">Privacy Policy</a></p>
+			<p><span class="red">&copy;2013 Bloggity.com </span> |  <a href="#">Terms of Use</a>  |  <a href="#">Privacy Policy</a>  |  <a href="admin.php">Admin</a></p>
 		</footer>
 	</body>
 </html>

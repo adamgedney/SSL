@@ -98,7 +98,11 @@ a:hover, input[type=submit]:hover, .content p.expand-all:hover, img.expand-all:h
 	-webkit-transition-duration: 1.5s;
 }
 
-input[type=text], input[type=password], label{
+select:visited{
+	outline: none;
+}
+
+input[type=text], input[type=password], label, select{
 	width: 100px;
 	height: 25px;
 	border: none;
@@ -136,6 +140,19 @@ input[type=submit]{
 
 .no-hover:hover{
 	opacity: 1;
+}
+
+form p.error{
+	color:  #d93330;
+	position: relative;
+	font-size: .9em;
+	margin-left: 102px;
+	bottom: 15px;
+	height: 0;
+-webkit-transition-duration: .7s;
+   -moz-transition-duration: .7s;
+     -o-transition-duration: .7s;
+        transition-duration: .7s;
 }
 
 /*--------------------------------------End General / Start Header/Nav------------------------------------*/
@@ -190,6 +207,10 @@ header nav ul li a{
 .login-form{
 	float: right;
 	padding-top: 12px;
+}
+
+.login-form input[type=text], .login-form input[type=password]{
+	width: 150px;
 }
 
 .container{
@@ -324,6 +345,12 @@ header nav ul li a{
 
 .register-content{
 	overflow: hidden;
+	padding-bottom: 90px;
+}
+
+.form-block{
+	position: relative;
+	overflow: hidden;
 }
 
 .register-content img:first-child{
@@ -362,12 +389,37 @@ header nav ul li a{
 	text-align: right;
 }
 
-.reg-form input[type=text], .reg-form input[type=password]{
+.reg-form input[type=text], .reg-form input[type=password], .reg-form select{
 	border: 1px solid #252525;
 	width: 200px;
 	height: 35px;
 	margin-bottom: 18px;
 	border-radius: 2px;
+	float: left;
+}
+
+.radio-block{
+	height: 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+.radio-option{
+	float: left;
+	margin-left: 48px;
+}
+
+.reg-form input[type=radio]{
+	display: inline;
+	float: right;
+}
+
+.reg-form label.radio{
+	display: inline;
+	padding-top: 2px;
+	margin: 0;
+	width: auto;
+	height: auto;
 	float: left;
 }
 

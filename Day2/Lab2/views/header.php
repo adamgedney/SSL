@@ -31,10 +31,10 @@
 				<? include 'views/nav.php';?> 
 				
 				<div class="login-form">
-					<form>
-						<input type="text" placeholder="username" />
-						<input type="password" placeholder="password"/>
-						<input type="submit" value="submit"/>
+					<form action="?action=login" method="post" name="login-form">
+						<input type="text" name="email" placeholder="email" />
+						<input type="password" name="password" placeholder="password"/>
+						<input type="submit" value="login"/>
 					</form>
 				</div><!-- /.login-form -->
 		</div><!-- /.header-inner -->
