@@ -1,0 +1,316 @@
+
+
+
+
+/* 	Copyright Adam Gedney 3/31/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+
+
+/*
+white: #fafafa;
+white#2: f0eee6;
+dark grey #252525;
+light grey: #6e6e6e;
+light grey #2 d3d3d3
+nav grey: 929292;
+blue: #4485C5;
+red: #d93330;
+pink: bf6960;
+*/
+
+
+/*-----------------------------------------------------Control panel--------------------------------------------------*/
+
+
+.admin-page{
+	width: 1140px;
+	margin: 0 auto;
+	background: url("../images/admin-bg.jpg") #fafafa repeat-y;
+	clear: both;
+	overflow: hidden;
+}
+
+.control-panel{
+	float: left;
+	color: #6e6e6e;
+	font-weight: 100;
+	width: 200px;
+	min-height: 636px;
+}
+
+.control-panel h2{
+	background: #6e6e6e;
+	color: #fafafa;
+	margin-bottom: 1px;
+	padding: 27px 9px 9px;
+	font-weight: 100;
+}
+
+.control-panel h3{
+	background: #6e6e6e;
+	color: #fafafa;
+	font-size: 1.6em;
+	padding-left: 9px;
+	text-transform: uppercase;
+}
+
+.panel-inner{
+	padding: 9px;
+}
+
+.panel-inner ul{
+	margin-left: 9px;
+}
+
+.panel-inner ul li{
+	margin-bottom: 9px;
+}
+
+.panel-inner ul li img{
+	margin-right: 9px;
+}
+
+.panel-inner ul li a{
+	color: #D3D3D3;
+	line-height: 20px;
+}
+
+.posts-panel{
+	height: 100px;
+}
+
+.media-panel{
+	height: 100px;
+
+}
+
+.settings-panel{
+	height: 200px;
+}
+
+
+/*---------------------------------------Admin Content------------------------------*/
+
+#admin-content{
+	float: left;
+	margin: 18px;
+	width: 902px;
+	min-height: 600px;
+	padding: 12px 18px 18px;
+	overflow: hidden;
+}
+
+#admin-content textarea{
+	border: 1px solid #d3d3d3;
+	font-family: 'Open Sans', "Helvetica Neue Light", "HelveticaNeue Light", "Helvetica-Neue Light", Helvetica, Arial, sans-serif;
+	padding: 9px;
+}
+
+#admin-content h2.title{
+	width: 100%;
+	color: #d93330;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #6e6e6e;
+	margin-bottom: 18px;
+}
+
+#admin-content .post-folded{
+	border-top: none;
+	margin-bottom: 0;
+}
+
+#admin-content h2.post-title a{
+	color: #bf6960;
+	font-size: .7em;
+}
+
+.post-block{
+	height: 80px;
+	border-bottom: 1px solid #d3d3d3;
+	overflow: hidden;
+	padding: 18px 9px;
+}
+
+.post-block:hover{
+	background: #f0f0f0;
+}
+
+.admin-delete-post-icon{
+	float: right;
+	margin-top: 32px;
+}
+
+#admin-content .post-block h3.post-meta a{
+	color: #6e6e6e;
+	font-size: .8em;
+}
+
+/*----------------------------------------New Post/EditPost----------------------------------*/
+
+
+.new-post h3:first-child, .edit-post h3:first-child{
+	font-size: 2em;
+	color: #252525;
+	margin-top: 54px;
+}
+
+input#new-post-title, input#edit-post-title{
+	width: 500px;
+	height: 35px;
+	border: 1px solid #d3d3d3;
+	margin-bottom: 27px;
+}
+
+.new-post p, .edit-post p{
+	height: 25px;
+	margin: 0;
+}
+
+textarea#edit-post-tiny, textarea#new-post-tiny{
+	display: block;
+	width: 750px;
+	height: 375px;
+}
+
+.button-container{
+	overflow: hidden;
+	margin: 18px 117px 0 0;
+}
+
+.new-post .new-post-submit, .edit-post .edit-post-submit{
+	float: right;
+	width: 150px;
+	height: 35px;
+}
+
+.new-post .post-cancel, .edit-post .post-cancel{
+	float: right;
+	width: 150px;
+	height: 35px;
+	background: #d93330;
+	border: none;
+	margin-right: 18px;
+}
+
+/*------------------------------------------Library/Gallery---------------------*/
+
+#library{
+	overflow: hidden;
+}
+
+.image-block{
+	float: left;
+	width: 175px;
+	height: 175px;
+	overflow: hidden;
+	background: #000;
+	margin: 9px;
+}
+
+.image-block img{
+	opacity: 1;
+-webkit-transition-duration: 1s;
+   -moz-transition-duration: 1s;
+     -o-transition-duration: 1s;
+        transition-duration: 1s;
+}
+
+.image-block img:hover{
+	opacity: .4;
+}
+
+.add-media-h-icon, .new-post-h-icon{
+	float: right;
+}
+
+.upload-container{
+	width: 610px;
+	margin: 108px auto 0;
+}
+
+.upload-container h2{
+	margin-bottom: 36px;
+	color: #d93330;
+	font-size: 2.7em;
+}
+
+.upload-container p{
+	color: #252525;
+	font-size: .9em;
+}
+
+#file-form input[type=file]{
+	width: 350px;
+	height: 35px;
+	border-radius: 2px;
+	border: 1px solid #6e6e6e;
+}
+
+#file-form input[type=submit]{
+	height: 35px;
+	width: 150px;
+	border-bottom: 1px solid #4485C5;
+}
+
+/*--------------------------------------------User Settings-----------------------------*/
+
+.user-set{
+	width: 350px;
+	margin: 18px auto;
+}
+
+#admin-content .user-set input[type=text], #admin-content .user-set input[type=password], #admin-content .user-set select{
+	width: 250px;
+} 
+ 
+#admin-content .user-set input[type=submit]{
+	width: 250px;
+} 
+
+.delete-acct-link{
+	float: right;
+	width: 155px;
+}
+
+.delete-acct-link a{
+	color: #d93330;
+	font-size: 1em;
+	text-decoration: underline;
+	line-height: 1.75em;
+}
+
+.delete-acct-link p{
+	font-size: .8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
