@@ -1,0 +1,81 @@
+<div>
+
+<script type="text/template" id="delete-modal"/>
+	<div class="modal-lightbox" id="new-project-modal" >
+				<div class="modal">
+					<h2>Create New Project</h2>
+
+					<div class="priority">
+						<h3>Status</h3>
+
+						<div class="priority-radio">
+							<input type="radio" name="projPriority" value="Priority 1" />
+							<img src="images/lightning-icon.png" alt="lightning icon" width="15" height="20"/>
+							
+							<input type="radio" name="projPriority" value="Priority 2" />
+							<img src="images/wand-icon.png" alt="wand icon" width="25" height="20"/>
+							
+							<input type="radio" name="projPriority" value="Priority 3" />
+							<img src="images/fire-icon.png" alt="fire icon" width="20" height="20"/>
+							
+						</div><!-- ./priority-radio -->
+					</div><!-- ./priority -->
+					
+					<div class="modal-name-date">
+						<div class="modal-form">
+							<h3>Project Title</h3>
+							<input id="new-proj-title" type="text" placeholder="" autofocus="autofocus"/>
+						</div><!-- ./modal-forms -->
+						<div class="modal-form">
+							<h3>Due Date</h3>
+							<input id="new-proj-due" type="text" placeholder=""/>
+						</div><!-- ./modal-forms -->
+						<p id="error-message"></p>
+					</div><!-- ./modal-name-date -->
+
+					
+
+					<div class="modal-form-desc">
+						<h3>Project Desc</h3>
+						<textarea id="new-proj-desc" class="desc" type="text" placeholder="" maxlength="139"></textarea>
+					</div><!-- ./modal-forms -->
+
+					<div class="modal-buttons">
+						<input type="submit" id="project-modal-cancel" class="modal-cancel-button" value="cancel"/>
+						<input type="submit" id="project-modal-submit" class="modal-submit-button" value="submit"/>
+					</div><!-- ./modal-buttons -->
+
+				</div><!-- ./modal -->
+	</div><!-- /.modal-lightbox-->
+
+</script>
+
+
+
+
+<script type="text/template" id="view-lib">
+	<div id="library">
+	</div><!-- /#library -->
+</script><!-- /#view-lib -->
+
+<script type="text/template" id="gal-block">
+	<div class="image-block" >
+		<a href="" data-lightbox="" class="gal-lb"><img class="library-image" data-imgId="" src="" alt="library image"/></a>
+	</div><!-- /.image-block-->
+</script><!-- /#gal-block -->
+
+<script type="text/template" id="add-media">
+	<div class="upload-container">
+		<h2>Upload images to include in your blog posts</h2>
+			<form action="?action=file-upload" method="post" id="file-form">
+				<input type="file" accept="image/jpg, image/jpeg, image/png"/>
+				<input type="submit" value="upload" />
+			</form>
+		<p>.png .jpg .jpeg are accepted file formats</p>
+	</div><!-- /.upload-container-->
+</script><!-- /#add-media -->
+
+
+
+
+</div>
